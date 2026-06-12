@@ -1,0 +1,246 @@
+# Canonical Archetype Taxonomy
+
+Source: 20-batch subagent proposals merged.
+Total tasks classified: 199
+
+| Archetype | Tasks | % |
+|---|---|---|
+| CliSurfaceAndExitCode | 88 | 44.2% |
+| ByteExactGolden | 71 | 35.7% |
+| FilesystemSideEffect | 17 | 8.5% |
+| TuiScreenSnapshot | 9 | 4.5% |
+| LinterDiagnostic | 7 | 3.5% |
+| NumericTolerance | 4 | 2.0% |
+| OrchestrationDrivenWatcher | 2 | 1.0% |
+| MassiveFixtureSuite | 1 | 0.5% |
+
+## CliSurfaceAndExitCode (88 tasks)
+returncode.eq leads + stdout/stderr.contains on help/usage/flag tokens and error grammar; binary judged by exit semantics + diagnostic substrings, not byte output.
+
+- abishekvashok__cmatrix.5c082c6
+- agourlay__zip-password-finder.704700d
+- ajeetdsouza__zoxide.67ca1bc
+- altdesktop__i3-style.f93821b
+- ammarabouzor__tui-journal.2b4540d
+- ariga__atlas.6d81150
+- astaxie__bat.17d1080
+- axodotdev__oranda.27d60c7
+- bensadeh__tailspin.6278437
+- bootandy__dust.62bf1e1
+- brocode__fblog.3b54330
+- byron__dua-cli.8570c15
+- canop__broot.d6c798e
+- canop__rhit.ae90bcb
+- cheat__cheat.b8098dc
+- chirlu__sox.42b3557
+- chmln__handlr.90e78ba
+- clog-tool__clog-cli.7066cba
+- crowdagger__crowbook.ea214d7
+- cslarsen__jp2a.61d205f
+- cweill__gotests.2a672c5
+- direnv__direnv.02040c7
+- doxygen__doxygen.966d98e
+- drew-alleman__datasurgeon.d257cee
+- ducaale__xh.4a6e44f
+- dundee__gdu.ede21d2
+- ecumene__rust-sloth.051c559
+- ekzhang__bore.8e059cd
+- eliukblau__pixterm.1a93fd5
+- eudoxia0__hashcards.48aa136
+- facebook__zstd.1168da0
+- facebookresearch__fasttext.1142dc4
+- foriequal0__git-trim.07c2f50
+- gabotechs__dep-tree.60a95a2
+- ggreer__the_silver_searcher.a61f178
+- git-bahn__git-graph.87b4473
+- guumaster__hostctl.d6d9699
+- hatoo__oha.8dc6349
+- hooklift__gowsdl.2a06cec
+- ismaelgv__rnr.fc0733b
+- isona__dirble.e2dea9f
+- jonas__tig.8334123
+- jrnxf__thokr.09375ef
+- ksxgithub__parallel-disk-usage.96978ed
+- kyoheiu__felix.95df390
+- lfos__calcurse.49180d5
+- madler__pigz.fe4894f
+- miserlou__loop.209927c
+- mkj__dropbear.75f699b
+- mookid__diffr.2152742
+- naggie__dstask.ff57396
+- nikoladucak__caps-log.2cf2d1e
+- nikolassv__bartib.6b9b5ce
+- nukesor__pueue.8b9d6fe
+- o2sh__onefetch.e5958ce
+- ogham__dog.721440b
+- oppiliappan__eva.41ae245
+- orf__gping.26eb5b9
+- pemistahl__grex.fa3e8ed
+- pier-cli__pier.5e1bde9
+- raviqqe__muffet.a882908
+- rbakbashev__elfcat.52f8cc7
+- robertdavidgraham__masscan.b99d433
+- rs__curlie.5dfcbb1
+- rs__jplot.2a54bcc
+- rust-embedded__svd2rust.1760b5e
+- rust-lang__mdbook.37273ba
+- samtools__samtools.aa823b5
+- sayanarijit__xplr.1751065
+- segmentio__chamber.5f93f5f
+- sharkdp__fd.40d8eb3
+- sharkdp__hexyl.2e26437
+- sheepla__pingu.926d475
+- simeg__eureka.df3796c
+- sirwart__ripsecrets.34c9e03
+- skeema__skeema.6a76243
+- stacked-git__stgit.430027d
+- stranger6667__jsonschema.d52e881
+- svenstaro__miniserve.8449e8b
+- tarka__xcp.5e5b448
+- tinycc__tinycc.9b8765d
+- tree-sitter__tree-sitter.5e23cca
+- wfxr__code-minimap.0ddeea5
+- wintermute-cell__ngrrram.8ea13c3
+- xorg62__tty-clock.f2f847c
+- yassinebridi__serpl.c48a9d7
+- zevv__duc.a58fa4e
+- zk-org__zk.10d93d5
+
+## ByteExactGolden (71 tasks)
+stdout.eq or other.eq dominates; tests compare full bytes against golden fixtures; docstrings cite 'Golden files' / 'EXPECT' / 'byte-for-byte'.
+
+- alecthomas__chroma.8d04def
+- alexpovel__srgn.89f943b
+- anordal__shellharden.6a6ffd4
+- antonmedv__fx.86d0d34
+- arq5x__bedtools2.dd57059
+- ast-grep__ast-grep.dde0fe0
+- bellard__quickjs.d7ae12a
+- blake3-team__blake3.15e83a5
+- boyter__scc.515f91c
+- burntsushi__ripgrep.3b7fd44
+- burntsushi__xsv.f430466
+- chmln__sd.87d1ba5
+- cmatsuoka__figlet.202a0a8
+- cordx56__rustowl.655bc5c
+- dalance__amber.69a0f52
+- dandavison__delta.acd758f
+- duckdb__duckdb.bdb65ec
+- epistates__treemd.825c6dd
+- esubaalew__run.0fb9dec
+- ffmpeg__ffmpeg.360a402
+- filosottile__age.706dfc1
+- google__brotli.b3dc9cc
+- hairyhenderson__gomplate.05eb3aa
+- hpjansson__chafa.dd4d4c1
+- hush-shell__hush.560c33a
+- incu6us__goimports-reviser.81bd549
+- ivanceras__svgbob.6d00ad9
+- jgm__pandoc.5caad90
+- jhspetersson__fselect.c3559ca
+- johanneskaufmann__html-to-markdown.3006818
+- johnkerl__miller.8d85b46
+- jqlang__jq.b33a763
+- junegunn__fzf.b56d614
+- kisielk__errcheck.dacab89
+- kyoh86__richgo.313114f
+- lh3__seqtk.94e7070
+- lua__lua.c6b4848
+- luajit__luajit.a553b3d
+- lz4__lz4.1519f46
+- mfridman__tparse.2416b4b
+- mgdm__htmlq.6e31bc8
+- mibk__dupl.1bf052b
+- mikefarah__yq.602586d
+- multiprocessio__dsq.c3ae0ba
+- noborus__ov.b96c2ba
+- noborus__trdsql.d8c5ff6
+- nuta__nsh.bdd0702
+- parcel-bundler__lightningcss.aa2ed1e
+- php__php-src.c891263
+- pls-rs__pls.4e1ae50
+- psampaz__go-mod-outdated.bb79367
+- rcoh__angle-grinder.9c2fc88
+- riquito__tuc.16fb471
+- rust-ethereum__ethabi.b1710ad
+- sclevine__yj.8016400
+- sharkdp__bat.f822bd0
+- sharkdp__hyperfine.327d5f4
+- sharkdp__pastel.b60e899
+- sibprogrammer__xq.b89f681
+- sigoden__argc.04a08f1
+- sitkevij__hex.61ae69b
+- sqlite__sqlite.839433d
+- sstadick__hck.b66c751
+- stathissideris__ditaa.f2286c4
+- thezoraiz__ascii-image-converter.d05a757
+- tomnomnom__gron.88a6234
+- tukaani-project__xz.1007bf0
+- typst__typst.88356d0
+- wfxr__csview.8ac4de0
+- wgunderwood__tex-fmt.3f1aef6
+- yoav-lavi__melody.f4af9b4
+
+## FilesystemSideEffect (17 tasks)
+other.truthy/contains/eq dominates on file artifacts, generated outputs, dir state; grader inspects produced filesystem state rather than stdout.
+
+- astro__deadnix.d590041
+- codesnap-rs__codesnap.f81e4f3
+- elkowar__pipr.fae0b17
+- halitechallenge__halite.822cfb6
+- ip7z__7zip.839151e
+- jesseduffield__lazygit.1d0db51
+- kaushiksrini__parqeye.8072121
+- lymphatus__caesium-clt.a529b2e
+- nachoparker__dutree.44e877d
+- ninja-build__ninja.cc60300
+- osgeo__gdal.0847f12
+- quinn-rs__quinn.bb359cc
+- rochacbruno__marmite.7d4bc2d
+- shashwatah__jot.a92aad8
+- xampprocky__tokei.505d648
+- y2z__monolith.8702e66
+- yaa110__nomino.f892499
+
+## TuiScreenSnapshot (9 tasks)
+Interactive TUI where assertions check captured screen state via 'other' target + golden screens; returncode.eq is unusually low.
+
+- antonmedv__walk.bf802ef
+- arthursonzogni__json-tui.17a22b6
+- jarun__nnn.cb2c535
+- konradsz__igrep.aa75630
+- peco__peco.4e58dad
+- rhysd__kiro-editor.4157485
+- trasta298__keifu.3331426
+- unhappychoice__gittype.34b72d0
+- ys-l__flamelens.0b4dc33
+
+## LinterDiagnostic (7 tasks)
+Static analyzer / linter: assertions check that specific diagnostic codes/messages fire on prepared inputs; expected literals are rule IDs.
+
+- danmar__cppcheck.0a5b103
+- go-critic__go-critic.9aea378
+- mgechev__revive.201451e
+- oppiliappan__statix.e9df54c
+- paradigmxyz__solar.5190d0e
+- rvben__rumdl.2d75c4d
+- tomarrell__wrapcheck.c058da1
+
+## NumericTolerance (4 tasks)
+other.gt/ge/lt/le bounds dominate; non-deterministic or numeric output validated by inequality windows rather than byte-exact equality.
+
+- gromacs__gromacs.665ea4c
+- htop-dev__htop.523600b
+- osgeo__proj.75d455c
+- svenstaro__genact.16f96e3
+
+## OrchestrationDrivenWatcher (2 tasks)
+Tool needs multi-step orchestration via popen + sleep + file/state mutation to drive the watcher; popen_calls > 0.
+
+- blacknon__hwatch.edfcb62
+- eradman__entr.8e2e8b4
+
+## MassiveFixtureSuite (1 tasks)
+Single task overwhelms with thousands of parameterized fixture tests sharing a template docstring (parser regressions etc.)
+
+- universal-ctags__ctags.243595e

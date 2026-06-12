@@ -7,8 +7,10 @@ dist/
 *.dyn_hi
 *.dyn_o
 
-# Dev-only data (ground truth labels — must not leak to agent / public)
-distill_out/
+# Dev-only data: only exclude the 235MB grader feature dump (over GitHub 100MB limit).
+# Regenerate via `scripts/parse_graders.py` from upstream PB tarballs.
+distill_out/features.all.jsonl
+distill_out/.DS_Store
 
 # macOS
 .DS_Store
