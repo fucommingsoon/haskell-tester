@@ -1,0 +1,58 @@
+cabal-version:      3.0
+name:               haskell-tester
+version:            0.1.0.0
+synopsis:           Black-box test agent driven by archetype playbooks
+license:            BSD-3-Clause
+author:             kangxin
+build-type:         Simple
+
+common deps
+    default-language: GHC2021
+    build-depends:    base >= 4.18 && < 5,
+                      text,
+                      bytestring,
+                      aeson,
+                      containers,
+                      directory,
+                      filepath,
+                      process,
+                      mtl,
+                      transformers,
+                      http-client,
+                      http-client-tls,
+                      http-types,
+                      vector,
+                      file-embed,
+                      template-haskell
+    ghc-options:      -Wall -Wno-unused-imports
+
+library
+    import:           deps
+    hs-source-dirs:   src
+    exposed-modules:  HaskellTester.Types
+                      HaskellTester.Classifier.Rule
+                      HaskellTester.Classifier.LLM
+                      HaskellTester.Classifier.Hybrid
+                      HaskellTester.Playbook
+                      HaskellTester.Probe.Shell
+                      HaskellTester.Probe.Baseline
+                      HaskellTester.Summary
+                      HaskellTester.LLM.Deepseek
+                      HaskellTester.InnerLoop
+                      HaskellTester.EmbeddedData
+                      HaskellTester.Evaluation.FactExtract
+                      HaskellTester.Evaluation.BatchRunner
+
+executable htester
+    import:           deps
+    hs-source-dirs:   app
+    main-is:          Main.hs
+    build-depends:    haskell-tester
+    ghc-options:      -threaded
+
+test-suite spec
+    import:           deps
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+    main-is:          Spec.hs
+    build-depends:    haskell-tester

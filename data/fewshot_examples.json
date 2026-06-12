@@ -1,0 +1,518 @@
+{
+  "CliSurfaceAndExitCode": [
+    {
+      "n_tests": 963,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "returncode.eq": 0.437,
+        "stdout.contains": 0.22,
+        "stdout.eq": 0.108,
+        "other.contains": 0.056,
+        "other.truthy": 0.043,
+        "other.eq": 0.042,
+        "stderr.contains": 0.041,
+        "stderr.eq": 0.032
+      },
+      "expected_value_samples": [
+        "b'0.5235987756'",
+        "b'--version'",
+        "b'20.0000000000'",
+        "b'14.0000000000'",
+        "b'111'",
+        "b'0.9990889488'"
+      ],
+      "docstring_samples": [
+        "CATCHES: implementations that don't store previous results, don't recognize\n'_' as a special variable, evaluate '_' as zero or undefined, or fail to update\nthe previous answer storage after each evalu",
+        "Test deg function converts radians to degrees."
+      ],
+      "test_files": [
+        "test_additional_functions.py",
+        "test_angle_units.py",
+        "test_argparse_validation.py",
+        "test_arithmetic.py",
+        "test_arithmetic_operations.py",
+        "test_basic.py"
+      ]
+    },
+    {
+      "n_tests": 792,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "stdout.contains": 0.299,
+        "returncode.eq": 0.297,
+        "other.truthy": 0.086,
+        "returncode.contains": 0.071,
+        "other.contains": 0.052,
+        "other.eq": 0.05,
+        "stderr.contains": 0.049,
+        "stderr.eq": 0.046
+      },
+      "expected_value_samples": [
+        "b'--minPasswordLen'",
+        "b'--charset'",
+        "b'Password found:ABC'",
+        "b'Password found:'",
+        "b'Invalid zip file error'",
+        "b'--help'"
+      ],
+      "docstring_samples": [
+        "Test charset with only uppercase letters.",
+        "Test -V displays version"
+      ],
+      "test_files": [
+        "test_aes_encryption.py",
+        "test_argparse_validation.py",
+        "test_argument_parsing.py",
+        "test_basic.py",
+        "test_basic_invocation.py",
+        "test_bruteforce.py"
+      ]
+    }
+  ],
+  "ByteExactGolden": [
+    {
+      "n_tests": 3044,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "stdout.eq": 0.414,
+        "returncode.eq": 0.41,
+        "other.eq": 0.078,
+        "stderr.eq": 0.025,
+        "other.contains": 0.024,
+        "returncode.ne": 0.018,
+        "stdout.contains": 0.016,
+        "other.truthy": 0.007
+      },
+      "expected_value_samples": [],
+      "docstring_samples": [
+        "CATCHES: implementations that don't validate -I flag requires a filename,\ncrash or misbehave when filename is missing.\nGolden file: missing_include_arg.golden -- ./executable -I",
+        "CATCHES: implementations that confuse pre-increment (++x returns new value) with\npost-increment (x++ returns old value), or that don't update the variable."
+      ],
+      "test_files": [
+        "test_advanced_features.py",
+        "test_atom_memory_gaps.py",
+        "test_basic_seed.py",
+        "test_bigint_bitwise.py",
+        "test_bytecode_compilation.py",
+        "test_conversion_coercion_final_gaps.py"
+      ]
+    },
+    {
+      "n_tests": 687,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "returncode.eq": 0.411,
+        "other.eq": 0.274,
+        "stdout.eq": 0.215,
+        "other.truthy": 0.031,
+        "stderr.eq": 0.022,
+        "other.contains": 0.022,
+        "returncode.ne": 0.014,
+        "other.ne": 0.003
+      },
+      "expected_value_samples": [
+        "b''",
+        "b'Permission denied'",
+        "b'Is a directory'",
+        "b'No such file or directory'"
+      ],
+      "docstring_samples": [
+        "CATCHES: implementations that fail on very large inputs (64KB), have buffer\nsize limits, produce wrong hashes when the chunk tree has depth 4+, or fail\nwhen combining large input with extended XOF out",
+        "CATCHES: keyed mode implementations that fail to respect --seek flag,\nstart output from wrong byte offset, or incorrectly handle XOF positioning."
+      ],
+      "test_files": [
+        "test_advanced.py",
+        "test_basic.py",
+        "test_check.py",
+        "test_edge_cases_final.py",
+        "test_errors.py",
+        "test_escape_sequences.py"
+      ]
+    }
+  ],
+  "TuiScreenSnapshot": [
+    {
+      "n_tests": 1796,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.truthy": 0.386,
+        "other.contains": 0.181,
+        "returncode.eq": 0.085,
+        "other.eq": 0.08,
+        "stdout.contains": 0.064,
+        "returncode.contains": 0.055,
+        "other.not_contains": 0.043,
+        "returncode.ne": 0.021
+      },
+      "expected_value_samples": [
+        "b'PATH'",
+        "b'-h'",
+        "b'hidden files'",
+        "b'exec.sh'",
+        "b'video.mp4'",
+        "b'5.2'"
+      ],
+      "docstring_samples": [
+        "Test stdin with relative paths.",
+        "Test NNN_ORDER environment variable."
+      ],
+      "test_files": [
+        "test_01_basic.py",
+        "test_02_fifo_flag.py",
+        "test_03_path_argument.py",
+        "test_04_picker_mode.py",
+        "test_05_flags_simple.py",
+        "test_06_flags_with_args.py"
+      ]
+    },
+    {
+      "n_tests": 311,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.eq": 0.335,
+        "other.contains": 0.213,
+        "other.truthy": 0.161,
+        "other.gt": 0.064,
+        "returncode.eq": 0.058,
+        "other.not_contains": 0.057,
+        "stdout.contains": 0.039,
+        "returncode.contains": 0.016
+      },
+      "expected_value_samples": [
+        "b'main;func2 50'",
+        "b'--debug'",
+        "b''",
+        "b'Arguments:'",
+        "b'main;func1 100'",
+        "b'Options:'"
+      ],
+      "docstring_samples": [
+        "Test handling of very deep stack traces.",
+        "Test zooming and navigating in zoomed view."
+      ],
+      "test_files": [
+        "test_advanced_interactions.py",
+        "test_args_parsing.py",
+        "test_basic.py",
+        "test_cli_snapshots.py",
+        "test_data_processing.py",
+        "test_error_handling.py"
+      ]
+    }
+  ],
+  "FilesystemSideEffect": [
+    {
+      "n_tests": 1167,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.contains": 0.33,
+        "other.truthy": 0.19,
+        "other.eq": 0.107,
+        "other.gt": 0.104,
+        "returncode.eq": 0.09,
+        "stdout.contains": 0.065,
+        "other.not_contains": 0.034,
+        "stdout.eq": 0.019
+      },
+      "expected_value_samples": [
+        "b'arch='",
+        "b''",
+        "b'os='",
+        "b'build date='",
+        "b'version='",
+        "b'scrollHeight'"
+      ],
+      "docstring_samples": [
+        "CATCHES: implementations that quote strings incorrectly for special YAML characters,\ndon't escape colons, quotes, or newlines properly, or produce malformed YAML when values\ncontain reserved character",
+        "Test that keybindings help can be opened."
+      ],
+      "test_files": [
+        "test_args_parsing.py",
+        "test_basic_cli.py",
+        "test_basic_flags.py",
+        "test_basic_tui.py",
+        "test_branches.py",
+        "test_cli_basic.py"
+      ]
+    },
+    {
+      "n_tests": 853,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.truthy": 0.268,
+        "returncode.eq": 0.24,
+        "other.contains": 0.19,
+        "other.eq": 0.148,
+        "other.gt": 0.033,
+        "stderr.contains": 0.029,
+        "stdout.contains": 0.024,
+        "other.is_not": 0.024
+      },
+      "expected_value_samples": [
+        "b'--serve'",
+        "b''",
+        "b'Marmite'",
+        "b'Marmite is the easiest static site generator'",
+        "b'posts'",
+        "b'--init-site'"
+      ],
+      "docstring_samples": [
+        "Test handling of empty markdown files.",
+        "Test --serve flag starts HTTP server."
+      ],
+      "test_files": [
+        "test_additional_coverage.py",
+        "test_additional_features.py",
+        "test_advanced.py",
+        "test_basic_invocation.py",
+        "test_cli.py",
+        "test_cli_operations.py"
+      ]
+    }
+  ],
+  "OrchestrationDrivenWatcher": [
+    {
+      "n_tests": 685,
+      "popen_calls": 21,
+      "assertion_distribution": {
+        "returncode.eq": 0.275,
+        "other.truthy": 0.13,
+        "other.eq": 0.118,
+        "stdout.contains": 0.111,
+        "stdout.eq": 0.102,
+        "other.contains": 0.094,
+        "stderr.contains": 0.052,
+        "returncode.ne": 0.024
+      },
+      "expected_value_samples": [
+        "b'non_interactive'",
+        "b'3'",
+        "b'-c'",
+        "b'shell'",
+        "b'clear-aggressive'",
+        "b'before'"
+      ],
+      "docstring_samples": [
+        "Test that restart kills long-running process.",
+        "Test restart mode with failing utility."
+      ],
+      "test_files": [
+        "test_additional_coverage.py",
+        "test_aggressive_mode.py",
+        "test_argparse_validation.py",
+        "test_basic.py",
+        "test_basic_invocation.py",
+        "test_cli.py"
+      ]
+    },
+    {
+      "n_tests": 1321,
+      "popen_calls": 8,
+      "assertion_distribution": {
+        "other.contains": 0.248,
+        "returncode.eq": 0.194,
+        "other.truthy": 0.167,
+        "stdout.contains": 0.113,
+        "other.eq": 0.095,
+        "other.gt": 0.043,
+        "returncode.contains": 0.037,
+        "other.ge": 0.031
+      },
+      "expected_value_samples": [
+        "b'tab1'",
+        "b'B'",
+        "b'--interval'",
+        "b'TEST'",
+        "b'RED'",
+        "b'NO_SHELL'"
+      ],
+      "docstring_samples": [
+        "Test tab size with actual tab characters.",
+        "Test --keymap=value form"
+      ],
+      "test_files": [
+        "test_additional_coverage.py",
+        "test_advanced_features.py",
+        "test_aftercommand.py",
+        "test_aftercommand_shell.py",
+        "test_ansi.py",
+        "test_ansi_gaps.py"
+      ]
+    }
+  ],
+  "LinterDiagnostic": [
+    {
+      "n_tests": 2550,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.contains": 0.426,
+        "returncode.eq": 0.163,
+        "other.eq": 0.154,
+        "stdout.contains": 0.04,
+        "other.truthy": 0.038,
+        "other.ge": 0.03,
+        "stderr.eq": 0.029,
+        "stdout.eq": 0.028
+      },
+      "expected_value_samples": [
+        "b'error:'",
+        "b':'",
+        "b''",
+        "b'severity='",
+        "b'<subcommand>'",
+        "b'<results'"
+      ],
+      "docstring_samples": [
+        "CATCHES: implementations that fail to detect %td scanf format receiving int*\ninstead of ptrdiff_t* - would pass if the checker doesn't handle 't' modifier\nfor scanf or allows int* for ptrdiff_t format",
+        "CATCHES: tokenizers that crash or fail to parse using declarations and directives,\neither not recognizing the syntax variations, mixing up declaration vs directive semantics,\nor breaking scope analysi"
+      ],
+      "test_files": [
+        "dumpfile_test.py",
+        "fuzz_test.py",
+        "helloworld_test.py",
+        "inline_suppress_test.py",
+        "lookup_test.py",
+        "metrics_test.py"
+      ]
+    },
+    {
+      "n_tests": 886,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.eq": 0.395,
+        "returncode.eq": 0.204,
+        "other.contains": 0.164,
+        "other.truthy": 0.094,
+        "other.ge": 0.045,
+        "returncode.contains": 0.042,
+        "other.gt": 0.019,
+        "other.not_contains": 0.01
+      },
+      "expected_value_samples": [
+        "b''",
+        "b'atomic.go'",
+        "b'Commit:'",
+        "b'Built'",
+        "b'Version:'"
+      ],
+      "docstring_samples": [
+        "CATCHES: Stylish formatter that doesn't group by file, omits position info,\nfails to include rule URLs, or doesn't show summary statistics.",
+        "Test empty-block rule."
+      ],
+      "test_files": [
+        "test_additional_rules.py",
+        "test_basic_invocation.py",
+        "test_cli.py",
+        "test_cli_config_and_version.py",
+        "test_comment_directives.py",
+        "test_comprehensive_rules.py"
+      ]
+    }
+  ],
+  "NumericTolerance": [
+    {
+      "n_tests": 1200,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "returncode.eq": 0.429,
+        "other.gt": 0.281,
+        "other.ge": 0.157,
+        "other.truthy": 0.066,
+        "stdout.contains": 0.03,
+        "returncode.ne": 0.018,
+        "other.contains": 0.01,
+        "returncode.contains": 0.005
+      },
+      "expected_value_samples": [
+        "b'sleep'",
+        "b'--filter'",
+        "b''",
+        "b'Command'",
+        "b'1'",
+        "b'delay'"
+      ],
+      "docstring_samples": [
+        "Test PID list with spaces.",
+        "Test that color mode contains ANSI codes."
+      ],
+      "test_files": [
+        "test_absolute_final_push.py",
+        "test_absolute_maximum.py",
+        "test_additional_sort_columns.py",
+        "test_advanced_columns.py",
+        "test_advanced_features.py",
+        "test_all_sorts.py"
+      ]
+    },
+    {
+      "n_tests": 7160,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.truthy": 0.376,
+        "returncode.eq": 0.214,
+        "other.ge": 0.186,
+        "other.le": 0.186,
+        "stdout.contains": 0.013,
+        "stdout.eq": 0.007,
+        "other.contains": 0.006,
+        "other.eq": 0.005
+      },
+      "expected_value_samples": [
+        "b'\\t'",
+        "b'-X'",
+        "b'$schema'",
+        "b'invalid scale argument'",
+        "b'708217'",
+        "b'708216'"
+      ],
+      "docstring_samples": [
+        "Multiple PROJ string outputs for coverage.",
+        "CS2CS between geographic CRS."
+      ],
+      "test_files": [
+        "test_basic.py",
+        "test_crs_input.py",
+        "test_errors.py",
+        "test_file_input.py",
+        "test_gaps_proj.py",
+        "test_harvest.py"
+      ]
+    }
+  ],
+  "MassiveFixtureSuite": [
+    {
+      "n_tests": 2579,
+      "popen_calls": 0,
+      "assertion_distribution": {
+        "other.eq": 0.626,
+        "returncode.eq": 0.251,
+        "stdout.contains": 0.028,
+        "other.contains": 0.027,
+        "other.truthy": 0.019,
+        "other.is_not": 0.015,
+        "stdout.eq": 0.009,
+        "stderr.contains": 0.008
+      },
+      "expected_value_samples": [
+        "b'DESCRIPTION'",
+        "b'#PATTERN'",
+        "b'[disabled]'",
+        "b'TAG_PROGRAM_NAME'",
+        "b'Ruby'",
+        "b'GREEN'"
+      ],
+      "docstring_samples": [
+        "CATCHES: parser regressions, incorrect tag generation, missing language features,\noutput format errors, and any deviation from expected behavior for each language parser\nacross 1665+ test cases coveri",
+        "CATCHES: parser regressions, incorrect tag generation, missing language features,\noutput format errors, and any deviation from expected behavior for each language parser\nacross 1665+ test cases coveri"
+      ],
+      "test_files": [
+        "test_basic.py",
+        "test_config_options.py",
+        "test_coverage.py",
+        "test_ctags.py",
+        "test_entry_gaps.py",
+        "test_errors_edge.py"
+      ]
+    }
+  ]
+}
